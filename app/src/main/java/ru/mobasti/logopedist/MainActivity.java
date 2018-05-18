@@ -21,4 +21,9 @@ public class MainActivity extends Activity {
     public void onClickClose(View view) {
         finish();
     }
+
+    public void onClickSyllable(View view) {
+        Intent intent = new Intent(MainActivity.this, SelectSyllableActivity.class);
+        startActivity(intent);
+    }
 }

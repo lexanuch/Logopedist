@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".ArticGym" />
         <activity android:name=".SelectSyllableActivity" />
-        <activity android:name=".SyllableActivity"></activity>
+        <activity android:name=".SyllableActivity" />
+        <activity android:name=".ExercisesSyllableActivity" />
+        <activity android:name=".TrainingSyllableActivity"></activity>
     </application>
 
 </manifest>
