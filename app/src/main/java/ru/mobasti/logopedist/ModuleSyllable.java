@@ -1,7 +1,10 @@
 package ru.mobasti.logopedist;
 
 public class ModuleSyllable {
-    public String[] TextSyllable;
+    private static String[] TextSyllable; // текст слогов
+    private static String[] LinkSoundSyllable; // ссылка на файл произнощения звука слога
+
+
     public String[] getTextSyllable(String Text) {
         switch(Text) {
             case "Ч":
@@ -12,4 +15,19 @@ public class ModuleSyllable {
 
         return TextSyllable;
     }
+
+
+    public static String[] getLinkSoundSyllable(String Text) {
+        switch (Text) {
+            case "Ч":
+                LinkSoundSyllable = new String[]{"android.resourse://ru.mobasti.logopedist/" + R.raw.test};
+                break;
+        }
+
+        return LinkSoundSyllable;
+
+    }
+
+
+
 }

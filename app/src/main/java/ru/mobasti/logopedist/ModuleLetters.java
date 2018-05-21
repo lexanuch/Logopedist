@@ -1,8 +1,10 @@
 package ru.mobasti.logopedist;
 
 public class ModuleLetters {
-    public String TextLetters;
-    public String getTextLetters(String Text) {
+    private static String TextLetters; // текст описания произнощения звука
+    private String LinkVideoSyllable; // ссылка на видеофайл со слогами
+
+    public static String getTextLetters(String Text) {
         switch(Text) {
             case "Ч":
                 TextLetters = "Губы округлены и вытянуты вперед, широкий кончик языка касается " +
@@ -13,5 +15,15 @@ public class ModuleLetters {
         }
 
         return TextLetters;
+    }
+
+    public String getLinkVideoSyllable(String Text) {
+        switch(Text) {
+            case "Ч":
+                LinkVideoSyllable = "android.resourse://ru.mobasti.logopedist/" + R.raw.test_video;;
+                break;
+        }
+
+        return LinkVideoSyllable;
     }
 }

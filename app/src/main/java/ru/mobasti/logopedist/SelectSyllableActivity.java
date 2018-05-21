@@ -7,6 +7,8 @@ import android.view.View;
 
 public class SelectSyllableActivity extends Activity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,5 +19,7 @@ public class SelectSyllableActivity extends Activity {
         Intent intent = new Intent(this, SyllableActivity.class);
         intent.putExtra("Letter", "Ч");
         startActivity(intent);
+
+
     }
 }

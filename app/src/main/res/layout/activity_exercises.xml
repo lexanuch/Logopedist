@@ -29,6 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="onClickExitExercises"
                 android:src="@android:drawable/ic_menu_close_clear_cancel" />
 
         </LinearLayout>
@@ -50,14 +51,6 @@
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
-            <VideoView
-                android:id="@+id/videoView_Syllable"
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:layout_weight="1"
-                android:visibility="visible"
-                tools:layout_height="wrap_content" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -69,6 +62,13 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:src="?android:attr/textSelectHandleRight" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_replay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="?android:attr/textSelectHandle" />
 
                 <ImageButton
                     android:id="@+id/imageButton_Next"
