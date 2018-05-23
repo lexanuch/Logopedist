@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -28,12 +29,20 @@ public class SyllableActivity extends Activity {
         TextView DescriptionLetter=(TextView)findViewById(R.id.textView_DescriptionLetter);
         DescriptionLetter.setText(ModuleLetters.getTextLetters(letter));
 
+       // MediaController controls = new MediaController(this);
+
         VideoSyllable = (VideoView)findViewById(R.id.videoView_Syllable);
-        String vidoepath = "android.resourse://ru.mobasti.logopedist/" + R.raw.test_video;
+        String vidoepath = "android.resource://" + getPackageName() + "/" + R.raw.test_video;
         Uri uri = Uri.parse(vidoepath);
         VideoSyllable.setVideoURI(uri);
+
+       // controls.setAnchorView(VideoSyllable);
+
         VideoSyllable.setBackgroundColor(Color.argb(0, 0, 0, 0));
         VideoSyllable.start();
+
+
+
 
     }
 
