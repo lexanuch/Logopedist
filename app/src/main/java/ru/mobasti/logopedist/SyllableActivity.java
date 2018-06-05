@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -32,7 +31,7 @@ public class SyllableActivity extends Activity {
        // MediaController controls = new MediaController(this);
 
         VideoSyllable = (VideoView)findViewById(R.id.videoView_Syllable);
-        String vidoepath = "android.resource://" + getPackageName() + "/" + R.raw.test_video;
+        String vidoepath = "android.resource://" + getPackageName() + "/" + R.raw.ch;
         Uri uri = Uri.parse(vidoepath);
         VideoSyllable.setVideoURI(uri);
 

@@ -20,7 +20,7 @@ public class ModuleLetters {
     public String getLinkVideoSyllable(String Text) {
         switch(Text) {
             case "Ч":
-                LinkVideoSyllable = "android.resourse://ru.mobasti.logopedist/" + R.raw.test_video;;
+                LinkVideoSyllable = "android.resourse://ru.mobasti.logopedist/" + R.raw.ch;
                 break;
         }
 

@@ -20,7 +20,7 @@ public class ModuleSyllable {
     public static String[] getLinkSoundSyllable(String Text) {
         switch (Text) {
             case "Ч":
-                LinkSoundSyllable = new String[]{"android.resourse://ru.mobasti.logopedist/" + R.raw.test};
+                LinkSoundSyllable = new String[]{"android.resourse://ru.mobasti.logopedist/" + R.raw.ch};
                 break;
         }
 

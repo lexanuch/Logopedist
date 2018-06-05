@@ -37,17 +37,17 @@ public class ModuleArticGym {
     }
 
 
-    public static String[] getLinkImageArticGym(String Text) {
+ //   public static String[] getLinkImageArticGym(String Text) {
 
-        LinkImageArticGym = new String[]{"android.resourse://ru.mobasti.logopedist/" + R.raw.test};
+ //       LinkImageArticGym = new String[]{"android.resourse://ru.mobasti.logopedist/" + R.raw.test};
 
-        return LinkImageArticGym;
-
-    }
+ //       return LinkImageArticGym;
+//
+  //  }
 
     public static String[] getLinkVideoArticGym(String Text) {
 
-        LinkVideoArticGym = new String[]{"android.resourse://ru.mobasti.logopedist/" + R.raw.test_video};
+        LinkVideoArticGym = new String[]{"android.resourse://ru.mobasti.logopedist/" + R.raw.bagel};
 
         return LinkVideoArticGym;
 
