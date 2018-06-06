@@ -60,4 +60,9 @@ public class SyllableActivity extends Activity {
         startActivity(intent);
 
     }
+
+    public void onClick_imageButton_replay(View view) {
+
+        VideoSyllable.start();
+    }
 }
